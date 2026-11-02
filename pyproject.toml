@@ -1,0 +1,26 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Soumyajit Saha", email = "u1320949@umail.utah.edu" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "bs4>=0.0.2",
+    "langchain>=1.4.7",
+    "langchain-anthropic>=0.3.22",
+    "langchain-community>=0.4.2",
+    "langchain-core>=0.3.86",
+    "langchain-openai>=0.3.35",
+    "langgraph>=0.6.11",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+rag = "rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
